@@ -9,13 +9,15 @@ def multiply(x, y):
 
 def divide(x, y):
     return x / y
+def power(x, y):
+    return x ** y
 
 print("Select operation:")
 print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
-
+print("5. Power")
 choice = input("Enter choice (1/2/3/4): ")
 
 num1 = float(input("Enter first number: "))
@@ -32,5 +34,7 @@ elif choice == '4':
         print(divide(num1, num2))
     else:
         print("Cannot divide by zero")
+elif choice=='5':
+    print(pow(num1,num2))
 else:
     print("Invalid input")
